@@ -29,6 +29,7 @@ def run_command(command_string, input_string="", max_lines=0, verbose=False, ech
         print "executing:", command_string
     obj = popen2.Popen4(command_string)
     output = ""
+    output1 = "12"
     valgrind_output = ""
 #    print "1"
     obj.tochild.write(input_string)
